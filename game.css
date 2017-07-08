@@ -1,0 +1,36 @@
+#timer {
+    color: red;
+    font-size: 30px;
+}
+
+#full, #exploded {
+    font-size: 40px;
+}
+
+.table-d {
+    float: left;
+    width: auto;
+    height: 500px;
+    background: #FFF;
+    border: solid 1px #A2A2A2;
+    margin-right: 5px;
+}
+
+.table-t {
+    width: 140px;
+    height: 132px;
+    background: url('images/timer.png');
+    text-align: center;
+}
+
+.table-db {
+    float: left;
+    width: 600px;
+    height: 500px;
+    background: url('images/scene.png');
+    background-position: bottom;
+}
+
+div#scene img {
+    margin: 10px;
+}
