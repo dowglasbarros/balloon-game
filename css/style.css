@@ -19,7 +19,7 @@
 .table-t {
     width: 140px;
     height: 132px;
-    background: url('images/timer.png');
+    background: url('../images/timer.png');
     text-align: center;
 }
 
@@ -27,7 +27,7 @@
     float: left;
     width: 600px;
     height: 500px;
-    background: url('images/scene.png');
+    background: url('../images/scene.png');
     background-position: bottom;
 }
 
