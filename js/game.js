@@ -58,16 +58,17 @@ function createBallons(numberOfBallons) {
         balloon.id = 'b' + i;
 
         balloon.onclick = function () {
-            estourar(this);
+            explode(this);
         };
 
         document.getElementById('scene').appendChild(balloon);
     }
 }
 
-function estourar(e) {
+function explode(e) {
     var idBalloon = e.id;
-
+    
+    document.getElementById(idBalloon).setAttribute("onclick", "");
     document.getElementById(idBalloon).src = 'images/small_blue_balloon_exploded.png';
 
     score(-1);
