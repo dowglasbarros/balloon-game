@@ -46,10 +46,6 @@ function timeCounting(seconds) {
     timerId = setTimeout("timeCounting(" + seconds + ")", 1000);
 }
 
-function gameOver() {
-    alert('Fim de jogo! Você não conseguiu estourar todos os balões a tempo, tente novamente!');
-}
-
 function createBallons(numberOfBallons) {
     for (var i = 1; i <= numberOfBallons; i++) {
 
@@ -67,7 +63,7 @@ function createBallons(numberOfBallons) {
 
 function explode(e) {
     var idBalloon = e.id;
-    
+
     document.getElementById(idBalloon).setAttribute("onclick", "");
     document.getElementById(idBalloon).src = 'images/small_blue_balloon_exploded.png';
 
@@ -91,13 +87,27 @@ function score(action) {
     gameStatus(full, exploded);
 }
 
-function gameStatus(full, exploded){
-    if(full == 0){
+function gameStatus(full, exploded) {
+    if (full == 0) {
         alert('Parabéns! Você conseguiu estourar todos os balões!');
         finishGame();
     }
 }
 
-function finishGame(){
+function finishGame() {
     clearTimeout(timerId);
+}
+
+function gameOver() {
+    noExplode();
+    alert('Fim de jogo! Você não conseguiu estourar todos os balões a tempo, tente novamente!');
+}
+
+function noExplode() {
+    var i = 1;
+
+    while (document.getElementById('b' + i)) {
+        document.getElementById('b' + i).onclick = '';
+        i++;
+    }
 }
