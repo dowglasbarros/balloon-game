@@ -1,7 +1,7 @@
-# Jogo Estourando Balões
+# Jogo estourando balões
 Um jogo de estourar balões utilizando HTML, CSS e JavaScript.
 
-## Instruções do jogo:
+## Regras do jogo:
 O objetivo do jogo é estourar os balões clicando em cima deles, antes que o tempo do cronômetro chegue ao zero. O nível selecionado definirá o tempo do cronômetro da seguinte forma:
 
 Nível fácil = 120 segundos :relieved:<br>
